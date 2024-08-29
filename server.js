@@ -5,6 +5,7 @@ import connect from './src/db/Connection.js';
 import subjectRoutes from './src/routes/SubjectRoutes.js';
 import genreRoutes from './src/routes/GenreRoutes.js';
 import subgenreRoutes from './src/routes/SubgenreRoutes.js';
+import titleRoutes from './src/routes/TitleRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(subjectRoutes);
 app.use(genreRoutes);
 app.use(subgenreRoutes);
+app.use(titleRoutes);
 connect();
 app.get('/', (req, res) => {
   res.json({ message: 'Hello There' });
