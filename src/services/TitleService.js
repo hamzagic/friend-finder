@@ -35,7 +35,7 @@ export const findByNameService = async (name) => {
       return title; 
     }
   } catch (error) {
-    return { error: 'Name already exists' };
+    return { error: 'Title already exists' };
   }
 }
 

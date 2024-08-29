@@ -32,7 +32,7 @@ export const findByNameService = async (name) => {
       return subgenre; 
     }
   } catch (error) {
-    return { error: 'Name already exists' };
+    return { error: 'Subgenre already exists' };
   }
 }
 

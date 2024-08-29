@@ -8,17 +8,21 @@ const starSchema = new Schema({
         required: true,
         unique: true
     },
-    subject_id: {
-      type: { type: ObjectId, ref: 'Subject' },
+    subject: {
+      type: String,
+      required: true
     },
-    genre_id: {
-      type: { type: ObjectId, ref: 'Genre' },
+    genre: {
+      type: String,
+      required: true
     },
-    subgenre_id: {
-      type: { type: ObjectId, ref: 'Subgenre' },
+    subgenre: {
+      type: String,
+      required: true,
     },
-    title_id: {
-      type: { type: ObjectId, ref: 'Title' },
+    title: {
+      type: String,
+      required: true,
     },
     description: {
         type: String

@@ -21,7 +21,7 @@ export const findByNameService = async (name) => {
       return subject; 
     }
   } catch (error) {
-    return { error: 'Name already exists' };
+    return { error: 'Subject already exists' };
   }
 }
 
