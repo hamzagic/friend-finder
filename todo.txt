@@ -1,0 +1,7 @@
+user crud
+create seeds
+user validation
+protect routes by role
+implement bcrypt and jsonwebtoken
+implement login limit
+investigate unit tests
