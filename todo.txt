@@ -1,7 +1,5 @@
-user crud
+refactor create subject, genre, subgenre, title and star logic
 create seeds
-user validation
-protect routes by role
 implement bcrypt and jsonwebtoken
 implement login limit
 investigate unit tests

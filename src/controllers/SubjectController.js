@@ -17,5 +17,5 @@ export const create = async (req, res) => {
     return res.status(400).json({ success: false, data: result.error });
   }
   
-  return res.status(201).json({ success: true, data: subject.error });
+  return res.status(201).json({ success: true, data: result });
 }

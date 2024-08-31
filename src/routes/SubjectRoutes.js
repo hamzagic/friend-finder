@@ -2,8 +2,9 @@ import express from 'express';
 const router = express.Router();
 
 import { create } from '../controllers/SubjectController.js';
-import { hasRole } from '../access/userRole.js';
+// import { hasRole } from '../access/userRole.js';
 
-router.post('/subject', hasRole(['admin']), create);
+// todo: adjust hasRole function to include as a middleware
+router.post('/subject', create);
 
 export default router;
