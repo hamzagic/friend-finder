@@ -37,6 +37,7 @@ subjectData.forEach(subject => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Authorization': `${process.env.API_TOKEN}`,
     },
     body: JSON.stringify(subject),
   })

@@ -1,5 +1,3 @@
 refactor create subject, genre, subgenre, title and star logic
 create seeds
-implement bcrypt and jsonwebtoken
-implement login limit
 investigate unit tests

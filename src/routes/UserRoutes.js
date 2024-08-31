@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 
-import { accessToken } from '../controllers/UserController.js';
+import { accessToken } from '../middlewares/authMiddleware.js';
 import { hasRole } from '../access/userRole.js';
 
 import { userInputValidation, userEmailValidation, userPasswordValidation, userLoginValidation } from '../validation/userValidation.js';
