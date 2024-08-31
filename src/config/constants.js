@@ -6,6 +6,7 @@ export const SUBJECTS = {
   CAREER: 'career',
   SPORTS: 'sports',
   FOOD: 'food',
+  PETS: 'pets',
 }
 
 export const MUSIC_GENRES = { 

@@ -62,8 +62,9 @@ export const getById = async (req, res) => {
 // validate inputs
 export const accessToken = async (req, res, next) => {
     const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
-    console.log('auth', token);
+    // const token = authHeader && authHeader.split(' ')[1];
+    const token = authHeader;
+    // console.log('auth', authHeader);
     if (!token) {
         res.status(401).json({ success: false, error: 'No token found' });
     } else {
